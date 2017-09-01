@@ -2,8 +2,14 @@
   <div class="uk-navbar-left">
     <ul class="uk-navbar-nav">
       <li class="uk-active"><a href="" routerLink="home">Luke Chen Shui</a></li>
-      <li class="uk-parent"><a href="" routerLink="projects">Projects</a></li>
-      <li><a href=""></a></li>
+      <li class="uk-parent">
+        <a href="" routerLink="projects">Projects</a>
+        <div class="uk-navbar-dropdown">
+          <ul class="uk-nav uk-navbar-dropdown-nav">
+            <li *ngFor="let project of projects" [routerLink]="['/project', project.name]"><a href="#">{{project.name}}</a></li>
+          </ul>
+        </div>
+      </li>
     </ul>
   </div>
 </nav>

@@ -1,11 +1,19 @@
-<div class="uk-card uk-card-default uk-card-body uk-card-hover project-item" *ngFor="let project of projects">
-  <h1 class="uk-card-title">
-    {{project.name}}
-    <a href="{{project.url}}" target="_blank" *ngIf="project.url" uk-icon="icon: link"></a>
-    <a href="{{project.github_url}}" target="_blank" *ngIf="project.github_url" uk-icon="icon: github"></a>
-  </h1>
-
-  <p>{{project.description}}</p>
-
-  <div *ngIf="project.img" class="uk-height-large uk-background-cover uk-light uk-flex" uk-parallax="bgy: -200" [ngStyle]="{'background-image': 'url(' + project.img + ')', 'min-height': '100vh'}"></div>
+<div class="uk-card uk-card-secondary uk-card-body uk-card-hover" id="project-heading">
+  Projects
 </div>
+<div class="uk-card uk-card-primary uk-width-1-1 uk-card-body uk-card-hover project-item" *ngFor="let project of projects" [routerLink]="['/project', project.name]">
+  {{project.name}}
+</div>
+
+<!--
+    <h1 class="uk-card-title">
+
+      <a href="{{project.url}}" target="_blank" *ngIf="project.url" uk-icon="icon: link"></a>
+      <a href="{{project.github_url}}" target="_blank" *ngIf="project.github_url" uk-icon="icon: github"></a>
+    </h1>
+
+    <p>{{project.description}}</p>
+
+    <div *ngIf="project.img" class="uk-height-large uk-background-cover uk-light uk-flex" uk-parallax="bgy: -200" [ngStyle]="{'background-image': 'url(' + project.img + ')', 'min-height': '100vh', 'background-size': 'contain'}"></div>
+-->
+

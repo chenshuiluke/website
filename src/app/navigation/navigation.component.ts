@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Inject, OnInit} from '@angular/core';
+import {Project} from "../project/project.model";
 
 @Component({
   selector: 'navigation',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavigationComponent implements OnInit {
 
-  constructor() { }
+  constructor(@Inject('PROJECT_ARR') public projects: Array<Project>) { }
 
   ngOnInit() {
   }

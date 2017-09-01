@@ -1,4 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 .project-item{
-  margin-bottom:20px;
+  margin-top:10px;
+  text-align: center;
+  cursor:pointer;
+}
+
+#project-heading{
+  text-align:center;
 }
