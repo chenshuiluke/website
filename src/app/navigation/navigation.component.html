@@ -6,7 +6,7 @@
         <a href="" routerLink="projects">Projects</a>
         <div class="uk-navbar-dropdown">
           <ul class="uk-nav uk-navbar-dropdown-nav">
-            <li *ngFor="let project of projects" [routerLink]="['/project', project.name]"><a href="#">{{project.name}}</a></li>
+            <li *ngFor="let project of projects"><a target="_blank" href="{{project.url}}">{{project.name}}</a></li>
           </ul>
         </div>
       </li>

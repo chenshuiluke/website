@@ -23,6 +23,7 @@ export class ProjectComponent implements OnInit {
         return project.name === project_name;
       });
     });
+    window.scrollTo(0, 0);
   }
 
 }

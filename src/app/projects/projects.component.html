@@ -1,9 +1,11 @@
 <div class="uk-card uk-card-secondary uk-card-body uk-card-hover" id="project-heading">
-  Projects
+  <h4>I have worked on quite a lot of projects, a few of which you can see below:</h4>
+  <p *ngFor="let project of projects" [routerLink]="['/project', project.name]">
+    <a>{{project.name}}</a>
+  </p>
 </div>
-<div class="uk-card uk-card-primary uk-width-1-1 uk-card-body uk-card-hover project-item" *ngFor="let project of projects" [routerLink]="['/project', project.name]">
-  {{project.name}}
-</div>
+
+
 
 <!--
     <h1 class="uk-card-title">
