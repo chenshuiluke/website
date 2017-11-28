@@ -15,8 +15,16 @@ export const constants = [
       img: "assets/img/ng-hackernews.png"
     },   
     {
+      name:"sql-playground",
+      "description": "A simple webapp where you can test basic SQL queries in the convenience of your browser.",
+      github_url: "https://github.com/chenshuiluke/sql-playground",
+      url: "https://sql-playground.lukecs.com/",
+      img: "assets/img/sqlplayground.png"
+    }
+    ,
+    {
       name:"maester",
-      "description": "A simple real-time collaborative text editor built using Angular 4 and Express with websockets. It's an in-progress Evernote clone.",
+      "description": "A simple real-time collaborative text editor built using Angular 4 and Express with websockets.",
       github_url: "https://github.com/chenshuiluke/maester",
       url: "http://maester.lukecs.com/",
       img: "assets/img/maester.png"

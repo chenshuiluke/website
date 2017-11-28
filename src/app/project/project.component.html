@@ -1,12 +1,14 @@
-<div class="uk-card uk-card-primary uk-card-body uk-card-hover project-item">
-    <h1 class="uk-card-title">
+<section>
+    <h2>
       {{project.name}}
-      <a href="{{project.url}}" target="_blank" *ngIf="project.url" uk-icon="icon: link"></a>
-      <a href="{{project.github_url}}" target="_blank" *ngIf="project.github_url" uk-icon="icon: github"></a>
-    </h1>
+    </h2>
+    <br/>
+    <a href="{{project.url}}" target="_blank" *ngIf="project.url">Check it out here</a>
+    <br />
+    <a href="{{project.github_url}}" target="_blank" *ngIf="project.github_url">View the source code here</a>
 
     <p>{{project.description}}</p>
 
     <div *ngIf="project.img" class="uk-height-large uk-background-contain uk-light uk-flex" uk-parallax="bgy: -200" [ngStyle]="{'background-image': 'url(' + project.img + ')', 'min-height': '100vh', 'background-size': 'contain'}"></div>
 
-</div>
+  </section>

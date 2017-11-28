@@ -1,0 +1,6 @@
+img{
+    min-width:50vw;
+    min-height: 50vh;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}

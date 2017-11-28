@@ -1,21 +1,9 @@
-<div class="uk-card uk-card-secondary uk-card-body uk-card-hover" id="project-heading">
-  <h4>I have worked on quite a lot of projects, a few of which you can see below:</h4>
-  <p *ngFor="let project of projects" [routerLink]="['/project', project.name]">
-    <a>{{project.name}}</a>
-  </p>
-</div>
-
-
-
-<!--
-    <h1 class="uk-card-title">
-
-      <a href="{{project.url}}" target="_blank" *ngIf="project.url" uk-icon="icon: link"></a>
-      <a href="{{project.github_url}}" target="_blank" *ngIf="project.github_url" uk-icon="icon: github"></a>
-    </h1>
-
+<section>
+  <p>I have worked on quite a lot of projects, a few of which you can see below:</p>
+  <div *ngFor="let project of projects" [routerLink]="['/project', project.name]">
+    <a>{{project.name}}:</a>
     <p>{{project.description}}</p>
-
-    <div *ngIf="project.img" class="uk-height-large uk-background-cover uk-light uk-flex" uk-parallax="bgy: -200" [ngStyle]="{'background-image': 'url(' + project.img + ')', 'min-height': '100vh', 'background-size': 'contain'}"></div>
--->
-
+    <parallax-image [image-url]="project.img"></parallax-image>
+    <br/>
+  </div>
+</section>

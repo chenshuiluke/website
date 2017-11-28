@@ -20,12 +20,10 @@
       "prefix": "",
       "styles": [
         "styles.css",
-        "../node_modules/uikit/dist/css/uikit.css"
+        "assets/css/awsm.min.css"
       ],
       "scripts": [
-        "../node_modules/jquery/dist/jquery.min.js",
-        "../node_modules/uikit/dist/js/uikit.min.js",
-        "../node_modules/uikit/dist/js/uikit-icons.min.js"
+        "../node_modules/jquery/dist/jquery.min.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
