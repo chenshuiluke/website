@@ -9,6 +9,6 @@
 
     <p>{{project.description}}</p>
 
-    <div *ngIf="project.img" class="uk-height-large uk-background-contain uk-light uk-flex" uk-parallax="bgy: -200" [ngStyle]="{'background-image': 'url(' + project.img + ')', 'min-height': '100vh', 'background-size': 'contain'}"></div>
+    <div *ngIf="project.img" [ngStyle]="{'background-image': 'url(' + project.img + ')', 'min-height': '100vh', 'background-size': 'contain', 'background-repeat' : 'no-repeat'}"></div>
 
   </section>
